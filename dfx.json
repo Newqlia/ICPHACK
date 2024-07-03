@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ECommerceAPI_backend": {
+      "main": "src/ECommerceAPI_backend/main.mo",
+      "type": "motoko"
+    },
+    "ECommerceAPI_frontend": {
+      "dependencies": [
+        "ECommerceAPI_backend"
+      ],
+      "source": [
+        "src/ECommerceAPI_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ECommerceAPI_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
